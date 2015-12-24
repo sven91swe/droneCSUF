@@ -1,0 +1,14 @@
+import sys
+import clr
+import time
+import MissionPlanner #import *
+clr.AddReference("MissionPlanner.Utilities") # includes the Utilities class
+time.sleep(10)  
+
+currentMode = cs.mode
+print currentMode
+
+Script.SendRC(4,2000,True)
+Script.sleep(5)
+
+Script.SendRC(4,0,True) 

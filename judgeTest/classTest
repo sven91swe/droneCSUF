@@ -1,0 +1,26 @@
+
+
+class A:
+    def __init__(self):
+        self.s="Hello"
+
+    def sayHello(self):
+        print(self.s)
+
+
+class B(A):
+    def __init__(self):
+        super(B,self).__init__()
+
+    def sayGoodbye(self):
+        print(self.s)
+
+
+
+b=B()
+
+
+b.sayHello()
+
+b.sayHello()
+b.sayGoodbye()
